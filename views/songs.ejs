@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style_2.css" />
+    <title>Main-page</title>
+    <link rel="shortcut icon" type="icon"" href="/assets/favicon.ico"/>
+    <script
+      src="https://kit.fontawesome.com/abd67d4b78.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="logo-pic">
+        <img src="/assets/logo.jpg" alt="logo" class="logo" />
+      </div>
+      <div class="name">
+        <h1 class="site-name">MUSICBEE</h1>
+      </div>
+      <!-- Search for mobiles -->
+      <div class="drop-searchbutton">
+        <div class="dropdown">
+          <span><i class="fas fa-search fa-2x drop-search-icon"></i></span>
+          <div class="dropdown-content">
+            <input
+              type="text"
+              name="search"
+              placeholder="search"
+              class="dropdown-search-bar"
+              id="mobileMainSearch"
+              onkeyup="searchSetMobileMain()"
+            />
+            <div class="drop-search-bar-search-logo">
+              <button type="submit" name="search" class="search-bar-button">
+                <a class="search-anchor" href="#"
+                  ><i class="fas fa-search search-icon"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search for mobiles end -->
+      <!-- Search for laptop -->
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search" class="search" id="laptopMainSearch" onkeyup="searchSetLaptopMain()" />
+      </div>
+      <div class="search-bar-search-logo">
+        <button type="submit" name="search" class="search-bar-button">
+          <a class="search-anchor" href="#"
+            ><i class="fas fa-search search-icon"></i
+          ></a>
+        </button>
+      </div>
+      <!-- Search for laptp end -->
+      <div class="home-icon-parent">
+        <a href="/playlist"
+          ><button type="submit" name="playlist" class="home-button">
+            <i class="fas fa-sliders-h fa-2x home-icon"></i></button
+        ></a>
+      </div>
+      <div class="home-icon-parent">
+        <a href="/logout"
+          ><button type="submit" name="log-out" class="home-button">
+            <i class="fas fa-sign-out-alt fa-2x home-icon"></i></button
+        ></a>
+      </div>
+    </div>
+    <!-- Main body -->
+    <div class="title">Our top picks</div>
+    <div class="top-pick-songs">
+      <div class="top-pick-child">
+        <div class="top-pick-play">
+          <button onclick='openPlayer("<%=songs[22].song%>","<%=songs[22].laptop_view%>","<%=songs[22].mobile_view%>","<%=songs[22].list_view%>","<%=i%>","<%=songs[22].name%>","<%=songs[22].artist%>")' name="play" class="play-button">  
+            <i class="fas fa-play fa-3x play-icon"></i>
+          </button>
+        </div>
+        <img
+          class="top-pick-images"
+          src=<%=songs[22].list_view%>
+          alt=<%=songs[22].name%>
+        />
+        <div class="song-name"><%=songs[22].name%></div>
+        <div class="singer-name"><%=songs[22].artist%></div>
+      </div>
+      <div class="top-pick-child">
+        <div class="top-pick-play">
+          <button onclick='openPlayer("<%=songs[25].song%>","<%=songs[25].laptop_view%>","<%=songs[25].mobile_view%>","<%=songs[25].list_view%>","<%=i%>","<%=songs[25].name%>","<%=songs[25].artist%>")' name="play" class="play-button">
+            <i class="fas fa-play fa-3x play-icon"></i>
+          </button>
+        </div>
+        <img
+          class="top-pick-images"
+          src=<%=songs[25].list_view%>
+          alt=<%=songs[25].name%>
+        />
+        <div class="song-name"><%=songs[25].name%></div>
+        <div class="singer-name"><%=songs[25].artist%></div>
+      </div>
+      <div class="top-pick-child">
+        <div class="top-pick-play">
+          <button onclick='openPlayer("<%=songs[31].song%>","<%=songs[31].laptop_view%>","<%=songs[31].mobile_view%>","<%=songs[31].list_view%>","<%=i%>","<%=songs[31].name%>","<%=songs[31].artist%>")' name="play" class="play-button">
+            <i class="fas fa-play fa-3x play-icon"></i>
+          </button>
+        </div>
+        <img
+          class="top-pick-images"
+          src=<%=songs[31].list_view%>
+          alt=<%=songs[31].name%>
+        />
+        <div class="song-name"><%=songs[31].name%></div>
+        <div class="singer-name"><%=songs[31].artist%></div>
+      </div>
+      <div class="top-pick-child">
+        <div class="top-pick-play">
+          <button onclick='openPlayer("<%=songs[37].song%>","<%=songs[37].laptop_view%>","<%=songs[37].mobile_view%>","<%=songs[37].list_view%>","<%=i%>","<%=songs[37].name%>","<%=songs[37].artist%>")' name="play" class="play-button">
+            <i class="fas fa-play fa-3x play-icon"></i>
+          </button>
+        </div>
+        <img
+          class="top-pick-images"
+          src=<%=songs[37].list_view%>
+          alt=<%=songs[37].name%>
+        />
+        <div class="song-name"><%=songs[37].name%></div>
+        <div class="singer-name"><%=songs[37].artist%></div>
+      </div>
+    </div>
+    <div class="title">List Of all songs</div>
+    <div class="song-list">
+      <%for(var i=0;i<songs.length;i++){%>
+      <div class="song-child" id="<%= songs[i].name %>">
+        <div class="song-element">
+          <div class="song-pic">
+            <img src=<%=songs[i].list_view%> alt=<%= songs[i].name %> class="song-img" />
+          </div>
+          <div class="song"><%= songs[i].name %></div>
+          <div class="singer"><%= songs[i].artist %></div>
+          <div class="list-icon">
+            <button name="play" class="list-play" onclick='openPlayer("<%=songs[i].song%>","<%=songs[i].laptop_view%>","<%=songs[i].mobile_view%>","<%=songs[i].list_view%>","<%=i%>","<%=songs[i].name%>","<%=songs[i].artist%>")' >
+              <i class="fas fa-play fa-2x"></i>
+            </button>
+          </div>
+          <form method="post">
+            <input type="text" class="input_display_none" name="song" id="formsong<%=i%>" value="<%=songs[i].song%>">
+            <input type="text" class="input_display_none" name="name" id="formsongname<%=i%>" value="<%=songs[i].name%>">
+            <input type="text" class="input_display_none" name="artist" id="formsongartist<%=i%>" value="<%=songs[i].artist%>">
+            <input type="text" class="input_display_none" name="laptop_view" id="formlaptopimg<%=i%>" value="<%=songs[i].laptop_view%>">
+            <input type="text" class="input_display_none" name="mobile_view" id="formmobileimg<%=i%>" value="<%=songs[i].mobile_view%>">
+            <input type="text" class="input_display_none" name="list_view" id="formlistimg<%=i%>" value="<%=songs[i].list_view%>"> 
+             <div class="list-icon">
+            <button type="submit" name="play" class="list-add playlist_submit" id="button<%=i%>">
+              <i class="fas fa-plus fa-2x" id="buttonicon<%=i%>"></i>
+            </button>
+          </div>
+        </form>
+        </div>
+      </div>
+      <%}%>
+     </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- SONG AND PLAYER SCREENS -->
+    <div id="songScreen">
+      <div class="parent">
+        <div class="logo-pic">
+          <img src="/assets/logo.jpg" alt="logo" class="logo" />
+        </div>
+        <div class="name">
+          <h1 class="site-name">MUSICBEE</h1>
+        </div>
+        <!-- Search for mobiles -->
+        <div class="drop-searchbutton">
+          <div class="dropdown">
+            <span><i class="fas fa-search fa-2x drop-search-icon"></i></span>
+            <div class="dropdown-content">
+              <input
+                type="text"
+                name="search"
+                placeholder="search"
+                class="dropdown-search-bar"
+                id="mobilePlayerSearch"
+                onkeyup="searchSetMobilePlayer()"
+              />
+              <div class="drop-search-bar-search-logo">
+                <button type="submit" name="search" class="search-bar-button">
+                  <a class="search-anchor" href="#" onclick="searchMobilePlayer()"
+                    ><i class="fas fa-search search-icon"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Search for mobiles end -->
+        <!-- Search for laptop -->
+        <div class="search-bar">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search"
+            class="search"
+            id="laptopPlayerSearch"
+            onkeyup="searchSetLaptopPlayer()"
+          />
+        </div>
+        <div class="search-bar-search-logo">
+          <button type="submit" name="search" class="search-bar-button">
+            <a class="search-anchor" href="#" onclick="searchLaptopPlayer()"
+              ><i class="fas fa-search search-icon"></i
+            ></a>
+          </button>
+        </div>
+        <!-- Search for laptp end -->
+        <div class="home-icon-parent">
+          <button
+            onclick="minimizeSongscreen()"
+            name="home"
+            class="home-button"
+          >
+            <i class="fas fa-home fa-2x home-icon"></i>
+          </button>
+        </div>
+        <div class="home-icon-parent">
+          <a href="/logout"
+            ><button type="submit" name="log-out" class="home-button">
+              <i class="fas fa-sign-out-alt fa-2x home-icon"></i></button
+          ></a>
+        </div>
+      </div>
+      <!-- Main body -->
+      <div class="album-cover">
+        <picture>
+          <source class="playerimgsrc"
+            media="(max-width: 575.9px)"
+            srcset="Mobile_album/album_mobile_1.png"
+          />
+          <source class="playerimgsrc"
+            media="(min-width: 575.9px)"
+            srcset="Laptop_album/album_laptop_1.png"
+          />
+          <img  class="album-img" />
+        </picture>
+      </div>
+      <div class="song-desc-parent">
+        <div class="song-desc" id="songTitle"></div>
+        <div class="singer-desc" id="songArtist"></div>
+      </div>
+      <!-- MUSIC SEEK BAR -->
+      <div class="music-seek-parent">
+        <div class="moving-time">0:00</div>
+        <div class="music-seek">
+          <input
+            type="range"
+            class="seek-bar"
+            id="seekbar1"
+            onclick="seek()"
+            value="0"
+          />
+        </div>
+        <div class="total-time" id="song-duration"></div>
+      </div>
+      <!-- MUSIC SEEK BAR END -->
+      <!-- Song screen player -->
+      <div class="player-parent">
+        <div class="player-child">
+          <div class="player-element">
+            <div class="player-pic">
+              <img
+                src=""
+                alt="song-1"
+                class="player-img"
+                id="playerimg"
+              />
+            </div>
+            <div class="player-icon">
+              <button onclick="prevSong()" name="back" class="control">
+                <i class="fas fa-backward"></i>
+              </button>
+            </div>
+            <div class="player-icon">
+              <button onclick="playPause()" name="play" class="control">
+                <i class="fas fa-play" id="playPauseButton"></i>
+              </button>
+            </div>
+            <div class="player-icon">
+              <button onclick="nextSong()" id="forward-button" name="next" class="control" data-songnumber="">
+                <i class="fas fa-forward"></i>
+              </button>
+            </div>
+            <div class="volume-controls-parent">
+              <div class="volume-controls-child">
+                <div class="player-icon">
+                  <button type="submit" name="mute" class="control">
+                    <i class="fas fa-volume-off"></i>
+                  </button>
+                </div>
+                <div class="volume-seek">
+                  <input
+                    type="range"
+                    class="volume-bar"
+                    id="volumebar1"
+                    onchange="volumeControls1()"
+                  />
+                </div>
+                <div class="player-icon">
+                  <button type="submit" name="full-volume" class="control">
+                    <i class="fas fa-volume-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="volume-controls-mobile-parent">
+        <div class="volume-controls-mobile-child">
+          <div class="player-icon">
+            <button type="submit" name="mute" class="control">
+              <i class="fas fa-volume-off"></i>
+            </button>
+          </div>
+          <div class="volume-seek">
+            <input
+              type="range"
+              class="volume-bar"
+              id="volumebar2"
+              onchange="volumeControls2()"
+            />
+          </div>
+          <div class="player-icon">
+            <button type="submit" name="full-volume" class="control">
+              <i class="fas fa-volume-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- BOTTOM PLAYER -->
+    <audio id="audio">
+      <source class="audiosrc"
+        src=""
+      />
+      <source class="audiosrc"
+        src=""
+      />
+      Your browser does not support the video tag.
+    </audio>
+    <div class="player-parent" id="bottom-player">
+      <div class="player-child" id="bottom-player-child">
+        <div class="player-element">
+          <div class="player-pic">
+            <img src="" alt="song-1" class="player-img" id="playerimg1" />
+          </div>
+          <div class="bottom-song-desc" id="songTitle2"></div>
+          <div class="player-icon">
+            <button onclick="opensongScreen()" name="up" class="control">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+          <div class="player-icon">
+            <button name="back" onclick="prevSong()" class="control">
+              <i class="fas fa-backward"></i>
+            </button>
+          </div>
+          <div class="player-icon">
+            <button onclick="playPause()" name="play" class="control">
+              <i class="fas fa-play" id="playPauseButton1"></i>
+            </button>
+          </div>
+          <div class="player-icon">
+            <button onclick="nextSong()" name="next" class="control">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
+          <div class="player-icon">
+            <button onclick="closePlayer()" name="up" class="control">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const form = document.querySelector('form');
+      form.addEventListener('submit',  (e) => {
+        e.preventDefault();
+      // const button =document.querySelector('.playlist_submit').
+      });
+    </script>
+    <script src="/assets/app_2.js"></script>
+  </body>
+</html>

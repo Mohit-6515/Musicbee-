@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767.9px) {
+  body {
+    background-image: url(./mobile-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .sign-up-body {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding: 16px;
+    background-color: rgba(192, 192, 192, 0.2);
+    border-radius: 50px;
+  }
+}
+@media only screen and (min-width: 767.9px) {
+  body {
+    background-image: url(./tablet-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .sign-up-body {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 16px;
+    background-color: rgba(192, 192, 192, 0.2);
+    border-radius: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url(./laptop-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .sign-up-body {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 16px;
+    background-color: rgba(192, 192, 192, 0.2);
+    border-radius: 50px;
+  }
+}
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+}
+.header {
+  text-align: center;
+  margin: 16px;
+  padding: 8px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(#ffffff, #98ddca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(252, 252, 252, 0);
+}
+.label {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #98ddca;
+}
+.form-component {
+  text-align: center;
+  margin: 16px;
+}
+.input {
+  border: 1px solid #98ddca;
+  border-radius: 2px;
+  width: 50%;
+  background-color: rgba(192, 192, 192, 0.4);
+  box-shadow: #98ddca 2px 2px 2px;
+}
+::placeholder {
+  text-align: center;
+  color: rgb(48, 48, 48);
+}
+.button {
+  text-align: center;
+  margin: 16px;
+}
+.sign-up-button {
+  margin: 4px;
+  padding: 8px 26px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #faf3f3;
+  border: 3px solid #98ddca;
+  box-shadow: #98ddca 4px 4px 4px;
+  transition: 0.8s;
+  text-shadow: 0.5px 0.5px #98ddca;
+}
+.sign-up-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: #98ddca 8px 8px 8px;
+  transition: 0.5sec;
+}
+@media only screen and (max-width: 767.9px) {
+  .input {
+    border: 1px solid #98ddca;
+    border-radius: 2px;
+    width: 80%;
+    background-color: rgba(192, 192, 192, 0.4);
+    box-shadow: #98ddca 2px 2px 2px;
+  }
+}
+.format {
+  margin: 2px;
+  color: #98ddca;
+  font-size: 16px;
+}
+.error {
+  margin: 8px;
+  padding: 2px;
+  color: #fff;
+  font-size: 16px;
+}
+.sub-header {
+  margin: 8px;
+  text-align: center;
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(#ffffff, #98ddca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(252, 252, 252, 0);
+}

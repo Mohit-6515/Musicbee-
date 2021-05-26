@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767.9px) {
+  body {
+    background-image: url(./mobile-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parent-button {
+    margin: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 767.9px) {
+  body {
+    background-image: url(./tablet-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parent-button {
+    margin: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url(./laptop-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .parent-button {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+}
+.header {
+  text-align: center;
+  margin: 16px;
+  padding: 8px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(#ffffff, #98ddca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(252, 252, 252, 0);
+}
+.sub-header {
+  text-align: center;
+  margin: 26px 16px 26px 16px;
+  padding: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-image: linear-gradient(#ffffff, #98ddca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(252, 252, 252, 0);
+}
+.button {
+  text-align: center;
+  margin: 16px;
+}
+.sign-login-button {
+  width: 200px;
+  margin: 16px;
+  padding: 8px 26px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #faf3f3;
+  border: 3px solid #98ddca;
+  box-shadow: #98ddca 4px 4px 4px;
+  transition: 0.8s;
+  text-shadow: 0.5px 0.5px #98ddca;
+}
+.sign-login-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: #98ddca 8px 8px 8px;
+  transition: 0.5sec;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  bottom: 0%;
+  color: #98ddca;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 575.9px) {
+  .sign-login-button {
+    width: 120px;
+    font-size: 1rem;
+    margin: 4px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #faf3f3;
+    border: 3px solid #98ddca;
+    box-shadow: #98ddca 4px 4px 4px;
+    transition: 0.8s;
+    text-shadow: 0.5px 0.5px #98ddca;
+  }
+  .footer {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0%;
+    color: #98ddca;
+    font-size: 1.2rem;
+  }
+}
